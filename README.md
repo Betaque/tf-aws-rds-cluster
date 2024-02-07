@@ -1,4 +1,4 @@
-# tf-aws-rds-cluster
+# RDS Cluster Module
 
 This module creates a RDS Cluster in AWS with customizable configurations.
 
