@@ -14,7 +14,7 @@ provider "aws" {
 For Example:-
 ```
 module "rds_cluster" {
-  source                                                 = "git::https://github.com/Betaque/tf-aws-rds.git//?ref=git pu" # Path of the Module
+  source                                                 = "git::https://github.com/Betaque/tf-aws-rds-cluster.git//?ref=feat/generic-rds" # Path of the Module
   db_subnet_group_name                                   = "db-subnet-group-east1"
   subnet_ids                                             = module.vpc_module.public_subnet_id
   db_subnet_group_tag_name                               = "RDS MySQL DB subnet group"
