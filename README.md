@@ -2,6 +2,8 @@
 
 This module creates a RDS Cluster in AWS with customizable configurations.
 
+## Usage
+
 1. **Get Started:** Begin by creating the necessary files, provider.tf and main.tf, in your Terraform project directory.
 2. **Declare Provider:** Open provider.tf and declare the AWS provider. Ensure you've configured your AWS credentials and set the desired region.
 ```
@@ -64,3 +66,14 @@ module "rds_cluster" {
   appautoscaling_metric_type                             = "RDSReaderAverageCPUUtilization"
   appautoscaling_target_value                            = 75
 }
+```
+
+4. **Initialize Terraform:** Run the below terraform Command to initialize the project and download the module dependencies.
+```
+terraform init
+```
+
+5. **Apply Changes:** Execute the below terraform Command to create the VPC infrastructure based on the specified configurations.
+```
+terraform apply
+``` 
