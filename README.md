@@ -58,7 +58,7 @@ module "rds_cluster" {
 
   source                                                     = "git::https://github.com/Betaque/tf-aws-rds-cluster.git//?ref=feat/generic-rds"
   aws_rds_subnet_group_name                                  = "db-subnet-group-east1"
-  subnet_ids                                                 = <YOUR_PUBLIC_SUBNET_ID>
+  subnet_ids                                                 = ["<YOUR_SUBNET_ID_1>", "<YOUR_SUBNET_ID_2>"] #List of subnet IDs where the RDS Cluster will be launched,  You can also provide a single subnet ID.
   db_subnet_group_tag_name                                   = "RDS MySQL DB subnet group"
   is_primary_cluster                                         = true
   rds_cluster_name                                           = "db-cluster-1"
